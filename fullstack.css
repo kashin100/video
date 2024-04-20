@@ -1,0 +1,49 @@
+.overlayads {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-contentads {
+  position: relative;
+  top: 1%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.overlayads a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlayads a:hover, .overlayads a:focus {
+  color: #f1f1f1;
+}
+
+.overlayads .closebtnads {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlayads a {font-size: 10px}
+  .overlayads .closebtnads {
+  font-size: 10px;
+  top: 15px;
+  right: 15px;
+  }
+}
